@@ -24,8 +24,11 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Something went wrong on the server', error: err.message });
 });
 
-const PORT = process.env.PORT || 5000;
+if (process.env.NODE_ENV !== 'production' || process.env.ENABLE_LISTEN === 'true') {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+module.exports = app;
