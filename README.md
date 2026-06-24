@@ -7,8 +7,7 @@ A full-stack web application built with the MERN stack (MongoDB, Express, React,
 - **User Authentication**: Secure JWT-based login and registration system.
 - **Employee Directory**: View a list of all employees and search by name.
 - **Employee Management**: Add, edit, and delete employee records (Full Name, Email, Mobile Number, Department, Designation, and Joining Date).
-- **Responsive Dashboard**: Features dynamic statistics including total headcount, active departments, and recent hires.
-- **Dark/Light Mode**: Toggleable visual themes tailored to user preference.
+- **Dashboard**: Features dynamic statistics including total headcount, active departments, and recent hires.
 
 ## Tech Stack
 
