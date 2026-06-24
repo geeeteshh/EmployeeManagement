@@ -77,7 +77,7 @@ VITE_API_URL=http://localhost:5000/api
    ```
 
 ### Running with Docker (Recommended)
-You can spin up the entire application stack (Frontend, Backend, and MongoDB) effortlessly using Docker:
+Inside the main directory in terminal with this command
 ```bash
 docker-compose up --build
 ```
@@ -97,15 +97,4 @@ The frontend will be available at `http://localhost:80` and the backend at `http
    npm run dev
    ```
 
-3. Open your browser and navigate to `http://localhost:5173` (or the port provided by Vite).
-
-## Deployment
-
-### Vercel Live Demo
-- **Frontend**: Link your repository to Vercel and set the Framework Preset to Vite.
-- **Backend**: Link your repository to Vercel, set the Root Directory to `backend/`, and deploy. Vercel will automatically detect `vercel.json` and deploy it as a Serverless Function.
-
-*Don't forget to configure the `VITE_API_URL` environment variable in the frontend project settings on Vercel to point to your live backend URL.*
-
-## License
-MIT License
+3. Open the browser and navigate to `http://localhost:5173` (or the port provided by Vite).
